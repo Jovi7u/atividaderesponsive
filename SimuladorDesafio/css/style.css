@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    180deg,
+    #00ffff 0,
+    #41f5ff 25%,
+    #53bcf2 50%,
+    #5087ab 75%,
+    #425a6e 100%
+  );
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+}
+p {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+h1 {
+  text-align: center;
+  color: #2f3aed;
+}
+form {
+  background: #2f3aed;
+  max-width: 400px;
+  min-height: 40vh;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+select {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+form input {
+  background-color: #ffff;
+  outline: none;
+  font-size: 17px;
+  border: 0;
+  border-radius: 2px;
+  height: 5vh;
+  margin-top: 10px;
+}
+form input::placeholder {
+  color: rgb(0, 0, 0);
+}
+form input[type="submit"] {
+  margin-top: 5px;
+  padding: 3px;
+  background: #3171f7;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input[type="submit"]:hover {
+  background: #389ae0;
+}
+h3 {
+  text-align: center;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.divresposta {
+  border-radius: 8px;
+  width: 30vw;
+}
+.divform {
+  width: 34vw;
+}
+
+.estiloform {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.respostaform {
+  width: 50vw;
+  display: flex;
+  height: 65vh;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .divresposta {
+    border-radius: 8px;
+    width: 48vw;
+    margin-top: 10px;
+  }
+  .estiloform {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .respostaform {
+    width: 100vw;
+    display: flex;
+    height: 65vh;
+    justify-content: center;
+  }
+  .divform {
+    width: 55vw;
+  }
+}

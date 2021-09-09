@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" type="text/css" rel="stylesheet" />
+    <title>Desafio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="estiloform">
+        <h1>Fintech</h1>
+        <div class="divform">
+          <form>
+            <h3>Simulador</h3>
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome"
+              required
+            />
+            <br />
+            <label for="mensalidade">Mensalidade</label>
+            <input
+              type="number"
+              name="mensalidade"
+              id="mensalidade"
+              placeholder="Digite a mensalidade desejada"
+              required
+            />
+            <br />
+            <label for="tempo">Tempo</label>
+            <select name="anos" required>
+              <option></option>
+              <option value="1">1 ano</option>
+              <option value="2">2 anos</option>
+              <option value="3">3 anos</option>
+              <option value="4">4 anos</option>
+            </select>
+            <br />
+            <input type="submit" name="acao" value="Simular" />
+          </form>
+        </div>
+      </div>
+
+      <div class="respostaform">
+        <div class="divresposta">
+          <h1>Fintech</h1>
+
+          <p>
+            Olá Tobias, juntando R$ 20,00 todo mês, você terá R$509, 65 em 2
+            anos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
